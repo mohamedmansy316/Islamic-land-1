@@ -1,0 +1,100 @@
+.lang-ar {
+  direction: rtl;
+  text-align: right !important;
+}
+
+.articles-container {
+  .item-ar {
+    height: 100%;
+    position: relative;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    .article-details {
+      padding: 20px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      h3 {
+        color: $sec-color;
+        font-weight: 700;
+        font-size: 23px;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 9px;
+      top: 0;
+      left: 0;
+      background-color: #70a9fa;
+      z-index: 1000;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+}
+#videoSec{
+  .item-ar {
+    
+    position: relative;
+    height: 100%;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    .video-details {
+      padding: 20px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      h3 {
+        color: $sec-color;
+        font-weight: 700;
+        font-size: 23px;
+      }
+    }
+    .play{
+          position: absolute;
+          color: #FFF;
+          font-size: 51px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+      }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 9px;
+      top: 0;
+      left: 0;
+      background-color: #70a9fa;
+      z-index: 1000;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+}

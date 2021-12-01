@@ -1,0 +1,32 @@
+$main-color: #0D6EFD;
+$sec-color: #3d8cfe;
+
+@font-face { font-family: arabic-regular; font-style: normal; font-weight: 400; src: url('../fonts/Arabic-Regular.ttf') format('truetype')}
+@font-face { font-family: arabic-sec; font-style: normal; font-weight: 400; src: url('../fonts/Questv1-Regular.otf') format('truetype')}
+//Scroll Bar
+//Scroll bar style
+::-webkit-scrollbar {
+       width: 10px;
+     }
+     ::-webkit-scrollbar-track {
+       background: #dddddda8;
+     }
+     ::-webkit-scrollbar-thumb {
+       background: #0d6efd;
+     }
+     ::-webkit-scrollbar-thumb:hover {
+       background: #0d6efd;
+     }
+     
+     ::-webkit-scrollbar {
+       width: 6px;
+     }
+     ::-webkit-scrollbar-track {
+       background: #ffffff;
+     }
+     ::-webkit-scrollbar-thumb {
+       background: #0d6efd;
+     }
+     ::-webkit-scrollbar-thumb:hover {
+       background: #0d6efd;
+     }
