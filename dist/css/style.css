@@ -344,6 +344,17 @@ section:not(#hero-sec) {
   color: #FFF;
 }
 
+.sec-btn {
+  background-color: #1f8bfa;
+  padding: 8px 9px;
+  border-radius: 4px;
+  color: #FFF;
+  text-decoration: none;
+}
+.sec-btn:hover {
+  color: #FFF;
+}
+
 .button {
   display: inline-block;
   padding: 12px 24px;
@@ -593,8 +604,8 @@ nav option {
   top: 150px !important;
 }
 #articlesSec .articles-container {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/books-sec.png");
-  background-position: center;
+  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/15.jpg");
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
   padding: 35px 57px;
