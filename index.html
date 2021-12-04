@@ -20,11 +20,12 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="d-flex w-100  flex-wrap justify-content-around">
         <a class="nav-link" href="https://islamhouse.com/en/" target="_blank"><img class="nav-img" src="dist/images/logo.png" alt=""></a>
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-lang-toggle dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Select language
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -38,12 +39,11 @@
     <div class="row h-100">
       <div class="sec-sec d-flex flex-column justify-content-evenly align-items-center">
         <div class="overlay"></div>
-        <h1 class="text-primary">Islam House</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas porro voluptatibus enim officia iusto,
-          repudiandae recusandae autem rem quo non accusamus voluptates eum, pariatur excepturi explicabo facilis,
-          possimus aut neque.</p>
+        <h1>Islam House</h1>
+        <p>This page contains a variety of materials to respond to the most prominent contemporary intellectual doctrines</p>
         <div class="hero-links">
-          <a class="button primary-btn" href="https://islamhouse.com/en/" target="_blank">Islam House <i class="fas fa-home"></i></a>
+          <a class="button primary-btn" href="https://islamhouse.com/ar/category/398211/showall/en/1" target="_blank">Read more <i class="fas fa-info-circle"></i></a>
+          <a class="button primary-btn " href="#booksSec">Explore <i class=" fas fa-angle-down"></i></a>
         </div>
       </div>
     </div>
@@ -53,12 +53,12 @@
   <section class="container-fluid" id="booksSec">
     <h2>Books</h2>
     <div class="owl-carousel owl-theme books-container row">
-      <div class="">
+      <div>
         <div class="item row m-3">
           <div class="book-img one col-lg-4 col-md-6 col-sm-16"></div>
           <div class="book-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>The Last Prophet</h3>
-            <p class="">The Last Prophet : Evidences for the Authenticity of Islam</p>
+            <p>The Last Prophet : Evidences for the Authenticity of Islam</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/books/2832541" target="_blank">More details <i class="fas fa-info-circle"></i></a>
               <a class="primary-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_books/single3/en-the-last-prophet.pdf">Download <i class="fas fa-download"></i></a>
@@ -66,12 +66,12 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div>
         <div class="item row m-3">
           <div class="book-img one col-lg-4 col-md-6 col-sm-12"></div>
           <div class="book-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>Atheists The Thieves of the Hereafter</h3>
-            <p class="">Atheists The Thieves of the Hereafter : A Refutation of Atheists’ Views about the Origin of Life and the Universe</p>
+            <p>Atheists The Thieves of the Hereafter : A Refutation of Atheists’ Views about the Origin of Life and the Universe</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/books/2832539" target="_blank">More details <i class="fas fa-info-circle"></i></a>
               <a class="primary-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_books/single3/en-atheists-the-thieves-of-the-hereafter.pdf">Download <i class="fas fa-download"></i></a>
@@ -79,12 +79,12 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div>
         <div class="item row m-3">
           <div class="book-img one col-lg-4 col-md-6 col-sm-12"></div>
           <div class="book-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>Sabighat - Misconceptions and Refutations</h3>
-            <p class="">In the Arabic original, the author gives his book the title Sabighat...</p>
+            <p>In the Arabic original, the author gives his book the title Sabighat...</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/books/2828642" target="_blank">More details <i class="fas fa-info-circle"></i></a>
               <a class="primary-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_books/single2/en-sabighat.pdf">Download <i class="fas fa-download"></i></a>
@@ -92,12 +92,12 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div>
         <div class="item row m-3">
           <div class="book-img one col-lg-4 col-md-6 col-sm-12"></div>
           <div class="book-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>Agnosticism</h3>
-            <p class="">A brief analysis of the concept of agnosticism.This article discusses the statement of Huxley...</p>
+            <p>A brief analysis of the concept of agnosticism.This article discusses the statement of Huxley...</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/books/420304" target="_blank">More details <i class="fas fa-info-circle"></i></a>
               <a class="primary-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_books/single2/en_Agnosticism.pdf">Download <i class="fas fa-download"></i></a>
@@ -105,12 +105,12 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div>
         <div class="item row m-3">
           <div class="book-img one col-lg-4 col-md-6 col-sm-12"></div>
           <div class="book-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>A Dialogue between an Atheist Professor and a Muslim Student</h3>
-            <p class="">A book in English contains a very interesting dialogue between an atheist...</p>
+            <p>A book in English contains a very interesting dialogue between an atheist...</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/books/401506" target="_blank">More details <i class="fas fa-info-circle"></i></a>
               <a class="primary-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_books/single2/en_dialogue_between_atheist_prof_and_muslim_student.pdf">Download <i class="fas fa-download"></i></a>
@@ -121,8 +121,6 @@
     </div>
   </section>
 
-
-
   <section id="articlesSec">
     <h2>Articles</h2>
     <div class="articles-container row">
@@ -131,7 +129,7 @@
           <div class="col-4 article-img one"></div>
           <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>Atheists are Polytheists</h3>
-            <p class="">All atheists are in fact polytheists...</p>
+            <p>All atheists are in fact polytheists...</p>
             <div>
               <a class="sec-btn" href="https://d1.islamhouse.com/data/en/ih_articles/single/en_Atheists_are_Polytheists.pdf" target="_blank">View article</a>
             </div>
@@ -143,7 +141,7 @@
           <div class="col-4 article-img one"></div>
           <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>Buddhism</h3>
-            <p class="">1-A brief overview of Buddhism. <br>
+            <p>1-A brief overview of Buddhism. <br>
               2-The Concept of God in Buddhism...</p>
             <div>
               <a class="sec-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_articles/single2/en_Buddhism.pdf" target="_blank">View article</a>
@@ -156,7 +154,7 @@
           <div class="col-4 article-img one"></div>
           <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>Creationism, Evolution, Intelligent Design or Islam?</h3>
-            <p class="">What Islam teaches about the origin of life...</p>
+            <p>What Islam teaches about the origin of life...</p>
             <div>
               <a class="sec-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_articles/single/en_Creationism_Evolution_Intelligent_Design_or_Islam.pdf" target="_blank">View article</a>
             </div>
@@ -168,7 +166,7 @@
           <div class="col-4 article-img one"></div>
           <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>Atheism</h3>
-            <p class="">Although a person may deny the existence of God, in the depths of their hearts, it is a fact they cannot deny...</p>
+            <p>Although a person may deny the existence of God, in the depths of their hearts, it is a fact they cannot deny...</p>
             <div>
               <a class="sec-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_articles/single/en_Atheism.pdf" target="_blank">View article</a>
             </div>
@@ -180,7 +178,7 @@
           <div class="col-4 article-img one"></div>
           <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>Hinduism</h3>
-            <p class="">A brief overview of Hinduism in a series of articles discussing it from a comparative religions perspective...</p>
+            <p>A brief overview of Hinduism in a series of articles discussing it from a comparative religions perspective...</p>
             <div>
               <a class="sec-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_articles/single2/en_Hinduism.pdf" target="_blank">View article</a>
             </div>
@@ -192,7 +190,7 @@
           <div class="col-4 article-img one"></div>
           <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>Common Questions Asked By Hindus About Islam</h3>
-            <p class="">In conveying the message of Islam to a non-Muslim, it is usually not sufficient to highlight only the ...</p>
+            <p>In conveying the message of Islam to a non-Muslim, it is usually not sufficient to highlight only the ...</p>
             <div>
               <a class="sec-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_articles/single/en_hinduism_faq.pdf" target="_blank">View article</a>
             </div>
@@ -204,7 +202,7 @@
           <div class="col-4 article-img one"></div>
           <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>Creationism, Evolution, Intelligent Design or Islam?</h3>
-            <p class="">What Islam teaches about the origin of life...</p>
+            <p>What Islam teaches about the origin of life...</p>
             <div>
               <a class="sec-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/en/ih_articles/single/en_Creationism_Evolution_Intelligent_Design_or_Islam.pdf" target="_blank">View article</a>
             </div>
@@ -257,7 +255,7 @@
           <div class="video-img one col-lg-4 col-md-6 col-sm-12"><i class="play fas fa-play-circle"></i></div>
           <div class="video-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>A Muslim Destroys the New Atheism with Clear Simple Logic</h3>
-            <p class="">In this episode of the DeenShow, Imam Kamil Mufti discusses the issue of a new illogical trend which emerged from many illogical man-made religions which deny the creator who created them and this entire universe</p>
+            <p>In this episode of the DeenShow, Imam Kamil Mufti discusses the issue of a new illogical trend which emerged from many illogical man-made religions which deny the creator who created them and this entire universe</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/videos/2776487" target="_blank">Watch <i class="fab fa-youtube"></i></a>
             </div>
@@ -269,7 +267,7 @@
           <div class="video-img one col-lg-4 col-md-6 col-sm-12"><i class="play fas fa-play-circle"></i></div>
           <div class="video-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>Scientific Facts for the Atheists to Know Islam Is the Truth</h3>
-            <p class="">This episode talks about the miraculous Quran which was revealed to the Prophet Muhammad (peace be upon him) fourteen centuries ago. It has scientific facts for the atheists to know that Islam is the truth.</p>
+            <p>This episode talks about the miraculous Quran which was revealed to the Prophet Muhammad (peace be upon him) fourteen centuries ago. It has scientific facts for the atheists to know that Islam is the truth.</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/videos/803388" target="_blank">Watch <i class="fab fa-youtube"></i></a>
             </div>
@@ -281,7 +279,7 @@
           <div class="video-img one col-lg-4 col-md-6 col-sm-12"><i class="play fas fa-play-circle"></i></div>
           <div class="video-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>Atheism and Agnosticism</h3>
-            <p class="">In this episode of Interfaith issues Dr. Brown explains the reality of the belief of Atheism and Agnosticism.</p>
+            <p>In this episode of Interfaith issues Dr. Brown explains the reality of the belief of Atheism and Agnosticism.</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/videos/429199" target="_blank">Watch <i class="fab fa-youtube"></i></a>
             </div>
@@ -293,7 +291,7 @@
           <div class="video-img one col-lg-4 col-md-6 col-sm-12"><i class="play fas fa-play-circle"></i></div>
           <div class="video-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>Why a Former Buddhist Christian accepted Islam?</h3>
-            <p class="">A great story from Hussain Yee a Former Buddhist and a former Christian who accepted Islam.</p>
+            <p>A great story from Hussain Yee a Former Buddhist and a former Christian who accepted Islam.</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/videos/322138" target="_blank">Watch <i class="fab fa-youtube"></i></a>
             </div>
@@ -305,7 +303,7 @@
           <div class="video-img one col-lg-4 col-md-6 col-sm-12"><i class="play fas fa-play-circle"></i></div>
           <div class="video-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>Islam and Modernism</h3>
-            <p class="">Dr. Bilal Philips talks about Islam and Modernism. This is a must listen, an excellent and important talk for every Mu’min and Muslim!, followed by questions and answers section.</p>
+            <p>Dr. Bilal Philips talks about Islam and Modernism. This is a must listen, an excellent and important talk for every Mu’min and Muslim!, followed by questions and answers section.</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/videos/336432" target="_blank">Watch <i class="fab fa-youtube"></i></a>
             </div>
@@ -317,7 +315,7 @@
           <div class="video-img one col-lg-4 col-md-6 col-sm-12"><i class="play fas fa-play-circle"></i></div>
           <div class="video-details col-lg-8 col-md-6 col-sm-12 p-3">
             <h3>What Happened to the Atheist Who Made a Prayer to God?</h3>
-            <p class="">In this episode, Dr. Lawrence Brown relates what happened when his daughter was at the verge of death. At that time, he prayed to God although he was an atheist.</p>
+            <p>In this episode, Dr. Lawrence Brown relates what happened when his daughter was at the verge of death. At that time, he prayed to God although he was an atheist.</p>
             <div class="links-container">
               <a class="primary-btn" href="https://islamhouse.com/en/videos/438281" target="_blank">Watch <i class="fab fa-youtube"></i></a>
             </div>
@@ -332,7 +330,7 @@
     <div class="col-3">
       <img class="footer-img" src="dist/images/footer-logo.png" alt="">
     </div>
-    <div class="col-9 ">
+    <div class="col-9">
       <div class="row d-flex justify-content-start align-items-start">
         
         <div class="d-flex flex-column col-lg-4 col-md-6 col-sm-12">
@@ -358,6 +356,7 @@
             <a target="_blank" href="https://t.me/IslamHouseEnglish"><i class="telegram fab fa-telegram"></i></a>
             <a target="_blank" href="https://islamhouse.com/RSS/IslamHouse-all-EN-EN.xml"><i class="follow fas fa-rss-square"></i></a>
           </div>
+          <a class="footer-cta-btn" href="https://islamhouse.com/en/subscribe" target="_blank">Or join our mailing list.</a>
       
         </div>
       </div>

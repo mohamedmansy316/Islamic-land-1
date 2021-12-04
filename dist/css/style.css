@@ -42,6 +42,49 @@
   background: #0d6efd;
 }
 
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  z-index: 11;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+.btn-lang-toggle {
+  background-color: #3d8cfe;
+  color: #FFF;
+}
+.btn-lang-toggle:hover {
+  color: #FFF;
+}
+
 .lang-ar {
   direction: rtl;
   text-align: right !important;
@@ -401,6 +444,7 @@ nav option {
   font-size: 4rem;
   font-weight: 600;
   z-index: 1;
+  color: #3d8cfe;
 }
 #hero-sec p {
   color: #FFF;
@@ -423,10 +467,11 @@ nav option {
 }
 #hero-sec .sec-sec {
   position: relative;
-  background-image: url("../images/hero-sec-bg.jpg");
+  background-image: url("../images/14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
 }
 #hero-sec .sec-sec .overlay {
   position: absolute;
@@ -434,7 +479,7 @@ nav option {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #00000091;
+  background-color: #000000ab;
 }
 
 #booksSec .owl-theme .owl-nav [class*=owl-] {
@@ -461,7 +506,6 @@ nav option {
   padding: 3px;
 }
 #booksSec .books-container .item {
-  height: auto;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: 4px;
@@ -531,6 +575,23 @@ nav option {
   background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/10.jpg");
 }
 
+#articlesSec .owl-theme .owl-nav [class*=owl-] {
+  color: #FFF;
+  font-size: 40px;
+}
+#articlesSec .owl-carousel .owl-prev {
+  left: 25px;
+}
+#articlesSec .owl-carousel .owl-next {
+  right: 25px;
+}
+#articlesSec .owl-carousel .nav-button {
+  height: 50px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 150px !important;
+}
 #articlesSec .articles-container {
   background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/books-sec.png");
   background-position: center;
@@ -542,8 +603,8 @@ nav option {
   padding: 3px;
 }
 #articlesSec .articles-container .item {
-  position: relative;
   height: 100%;
+  position: relative;
   margin: 20px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -577,7 +638,7 @@ nav option {
   top: 0;
   right: 0;
   background-color: #70a9fa;
-  z-index: 1000;
+  z-index: 10;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -608,6 +669,7 @@ nav option {
   width: 190px;
 }
 #audioSec .item .audio-details {
+  width: 90%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -724,7 +786,7 @@ nav option {
 }
 
 #videoSec .videos-container {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/books-sec.png");
+  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/11.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -777,7 +839,7 @@ nav option {
   top: 0;
   right: 0;
   background-color: #70a9fa;
-  z-index: 1000;
+  z-index: 10;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -822,6 +884,14 @@ footer .follow-links .telegram {
 footer .follow-links .follow {
   color: #3575f6;
 }
+footer .footer-cta-btn {
+  text-decoration: none;
+  color: #3d8cfe;
+  border: 2px solid #3d8cfe;
+  padding: 8px 13px;
+  width: fit-content;
+  font-weight: 600;
+}
 
 @media screen and (max-width: 460px) {
   #articlesSec .article-img {
@@ -837,6 +907,10 @@ footer .follow-links .follow {
   .book-img, .video-img, .article-img {
     height: 200px !important;
     width: 100% !important;
+  }
+
+  footer {
+    padding: 0px;
   }
 }
 @media screen and (min-width: 768px) {
