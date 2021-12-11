@@ -1,5 +1,6 @@
 @import "vars";
 @import "lang/ar";
+@import "lang/other";
 @import "navbar";
 //html style
 html {
@@ -301,38 +302,7 @@ nav{
         url("../images/1.jpg");
         background-position: center;
     }
-    .book-img.two {
-      background-image: linear-gradient(
-          354deg,
-          rgb(0 0 0 / 10%),
-          rgb(0 0 0 / 10%)
-        ),
-        url("../images/2.jpg");
-    }
-    .book-img.three {
-      background-image: linear-gradient(
-          354deg,
-          rgb(0 0 0 / 10%),
-          rgb(0 0 0 / 10%)
-        ),
-        url("../images/3.jpg");
-    }
-    .book-img.four {
-      background-image: linear-gradient(
-          354deg,
-          rgb(0 0 0 / 10%),
-          rgb(0 0 0 / 10%)
-        ),
-        url("../images/4.jpg");
-    }
-    .book-img.five {
-      background-image: linear-gradient(
-          354deg,
-          rgb(0 0 0 / 10%),
-          rgb(0 0 0 / 10%)
-        ),
-        url("../images/10.jpg");
-    }
+
   }
 }
 
