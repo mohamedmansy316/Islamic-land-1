@@ -1107,19 +1107,19 @@ footer .footer-cta-btn {
   background-position: center;
 }
 
-#articlesSec .article-img.one {
+#articlesSec .article-arimg.one {
   background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/1.jpeg") !important;
   background-position: center;
 }
-#articlesSec .article-img.two {
+#articlesSec .article-arimg.two {
   background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/2.jpeg") !important;
   background-position: center;
 }
-#articlesSec .article-img.three {
+#articlesSec .article-arimg.three {
   background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/3.jpeg") !important;
   background-position: center;
 }
-#articlesSec .article-img.four {
+#articlesSec .article-arimg.four {
   background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/4.jpeg") !important;
   background-position: center;
 }
