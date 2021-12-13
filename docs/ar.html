@@ -20,11 +20,20 @@
 </head>
 
 <body class="text-right" dir="rtl">
+    <!-- Loader Element -->
+    <div class="loader">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+  </div>
+  <!-- Scroll To Top Bnt -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+    <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="d-flex w-100  flex-wrap justify-content-around">
         <a class="nav-link" href="https://islamhouse.com/ar/" target="_blank"><img class="nav-img" src="dist/images/logo.png" alt=""></a>
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle text-right" dir="rtl" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown language-toggle">
+          <button class="btn btn-lang-toggle dropdown-toggle text-right" dir="rtl" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             حدد اللغة
           </button>
           <ul class="dropdown-menu lang-ar" aria-labelledby="dropdownMenuButton1">
@@ -39,8 +48,8 @@
     <div class="row h-100">
       <div class="sec-sec d-flex flex-column justify-content-evenly align-items-center">
         <div class="overlay"></div>
-        <h1>الإسلام والإلحاد</h1>
-        <p>هذه الصفحة تحتوي على  ردود علمية ومعرفية وفكرية للملحدين والربوبيين والماديين، والباحثين عن الحق، لكي يقف القارئ على مسافة تأذن له برؤية المشهد كاملاً تاريخياً وفلسفياً</p>
+        <h1 class="text-center">الإسلام والإلحاد</h1>
+        <p class="text-center">هذه الصفحة تحتوي على  ردود علمية ومعرفية وفكرية للملحدين والربوبيين والماديين، والباحثين عن الحق، لكي يقف القارئ على مسافة تأذن له برؤية المشهد كاملاً تاريخياً وفلسفياً</p>
         <div class="hero-links">
           <a class="button primary-btn" href="https://islamhouse.com/ar/category/429782/showall/ar/1" target="_blank">قراءة المزيد <i class="fas fa-home"></i></a>
           <a class="button primary-btn " href="#booksSec">تصفح الآن <i class=" fas fa-angle-down"></i></a>
@@ -332,7 +341,7 @@
       <div class=" col-lg-6 col-sm-12 p-3"> 
         <div class="item-ar row">
           <div class="col-4 article-arimg four"></div>
-          <div class="col-8 article-details">
+          <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>اللادينية واللاأدرية</h3>
             <p>هذا المقال كتبه المؤلف كمقدمة لكتاب العبودية واللادينية لفضيلة الدكتور عبد الرحمن بن عبد الكريم الشيحة.
               ويعالج هذا المقال الضلال الفكري لطوائف اللادينية واللا أدرية والتي هي آخذة في الإنتشار في كثير من المجتمعات الغربية, نسأل الله العلي العظيم أن يهدينا وإياهم إلى صراطه المستقيم.</p>
@@ -346,7 +355,7 @@
       <div class=" col-lg-6 col-sm-12 p-3"> 
         <div class="item-ar row">
           <div class="col-4 article-arimg three"></div>
-          <div class="col-8 article-details">
+          <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>أدلة إثبات وجود الله تعالى ووسائل ثبات الإيمان في النفوس</h3>
             <p>مقالة نافعة عبارة عن سؤال أجاب عنه فضيلة الشيخ عبد الرحمن بن ناصر البراك ونصه (فضيلة الشيخ الوالد عبد الرحمن البراك بارك الله في عمره وعمله: تعلمون ما انتشر أخيرًا في أوساط الشباب من موجة الإلحاد بسبب استغلال أعداء الإسلام ما تيسر من وسائل الاتصال وسرعة انتقال المعلومات...</p>
            <span><a class="autor mb-2 d-inline-block" href="https://islamhouse.com/ar/author/8036/" target="_blank"><i class="fas fa-pen"></i> عبد الرحمن بن ناصر البراك</a></span>
@@ -359,7 +368,7 @@
       <div class=" col-lg-6 col-sm-12 p-3"> 
         <div class="item-ar row">
           <div class="col-4 article-arimg two"></div>
-          <div class="col-8 article-details">
+          <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>الإلحاد</h3>
             <p>مقالة باللغة العربية، تحدثت عن الإيمان بالله من وجهة نظر الإسلام، مع توضيح دلائل وجود الله عن طريق خلق الكون والوحي الإلهي، وتجيب على الأسئلة الشائعة التي يثيرها الملحدون.</p>
            <span><a class="autor mb-2 d-inline-block" href="https://islamhouse.com/ar/author/443254/" target="_blank"><i class="fas fa-pen"></i> هيثم سرحان</a></span>
@@ -372,7 +381,7 @@
       <div class=" col-lg-6 col-sm-12 p-3"> 
         <div class="item-ar row">
           <div class="col-4 article-arimg one"></div>
-          <div class="col-8 article-details">
+          <div class="col-lg-8 col-md-8 col-sm-12 article-details">
             <h3>جنون الإلحاد وعقلانية الإيمان</h3>
             <p>جنون الإلحاد وعقلانية الإيمان : مقالة باللغة العربية؛ اشتملت على ثلاث مقدمات في بيان ضلال الإلحاد، وعقلانية الإيمان.</p>
            <span><a class="autor mb-2 d-inline-block" href="https://islamhouse.com/ar/author/2828042/" target="_blank"><i class="fas fa-pen"></i> يزن الغانم</a></span>
@@ -489,7 +498,7 @@
   
 <footer>
   <div class="row p-4">
-    <div class="col-3">
+    <div class="col-3 footer-img-container">
       <img class="footer-img" src="dist/images/footer-logo.png" alt="">
     </div>
     <div class="col-9 ">

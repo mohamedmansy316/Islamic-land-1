@@ -20,11 +20,20 @@
 </head>
 
 <body>
+  <!-- Loader Element -->
+  <div class="loader">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+  </div>
+
+  <!-- Scroll To Top Bnt -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+  <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="d-flex w-100  flex-wrap justify-content-around">
         <a class="nav-link" href="https://islamhouse.com/en/" target="_blank"><img class="nav-img" src="dist/images/logo.png" alt=""></a>
-        <div class="dropdown">
+        <div class="dropdown language-toggle">
           <button class="btn btn-lang-toggle dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Select language
           </button>
@@ -40,8 +49,8 @@
     <div class="row h-100">
       <div class="sec-sec d-flex flex-column justify-content-evenly align-items-center">
         <div class="overlay"></div>
-        <h1>Islam and atheism</h1>
-        <p>This page contains scientific, cognitive and intellectual responses to atheists, deists, materialists, and those searching for the truth, in order for the reader to stand at a distance that allows him to see the complete historical and philosophical scene.</p>
+        <h1 class="text-center">Islam and atheism</h1>
+        <p class="text-center">This page contains scientific, cognitive and intellectual responses to atheists, deists, materialists, and those searching for the truth, in order for the reader to stand at a distance that allows him to see the complete historical and philosophical scene.</p>
         <div class="hero-links">
           <a class="button primary-btn" href="https://islamhouse.com/en/category/429782/showall/en/1" target="_blank">Read more <i class="fas fa-info-circle"></i></a>
           <a class="button primary-btn " href="#booksSec">Explore <i class=" fas fa-angle-down"></i></a>
@@ -289,12 +298,11 @@
   
 <footer>
   <div class="row p-4">
-    <div class="col-3">
+    <div class="col-3 footer-img-container">
       <img class="footer-img" src="dist/images/footer-logo.png" alt="">
     </div>
-    <div class="col-9">
+    <div class="col-9 ">
       <div class="row d-flex justify-content-start align-items-start">
-        
         <div class="d-flex flex-column col-lg-4 col-md-6 col-sm-12">
           <h4>Important links</h4>
           <a target="_blank" href="https://islamhouse.com/en/contact">Contact us</a>

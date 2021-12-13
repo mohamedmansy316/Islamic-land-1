@@ -20,6 +20,13 @@
 </head>
 
 <body>
+    <!-- Loader Element -->
+    <div class="loader">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
+  </div>
+  <!-- Scroll To Top Bnt -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
   <div class="languages-container ">
     <div class="d-flex languages justify-content-center align-items-center flex-wrap">
@@ -59,11 +66,12 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="d-flex w-100  flex-wrap justify-content-around">
-        <a class="nav-link" href="https://islamhouse.com/en/" target="_blank"><img class="nav-img" src="dist/images/logo.png" alt=""></a>
-        <button type="button" id="langSwitch" class="nav-item btn btn-lang-toggle">
+      <a class="nav-link d-flex justify-content-center align-items-center" href="https://islamhouse.com/en/" target="_blank"><img class="nav-img" src="dist/images/logo.png" alt=""></a>
+      <div class="d-flex flex-column justify-content-center align-items-stretch">
+        <button type="button" id="langSwitch" class="nav-item btn btn-lang-toggle m-2">
           <i class="fas fa-language"></i> Language 
         </button>
-        <div class="dropdown">
+        <div class="dropdown language-toggle m-2">
           <button class="btn btn-lang-toggle dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Select language
           </button>
@@ -75,16 +83,17 @@
         </div>
 
       </div>
+
+      </div>
   </nav>
 
   <div class="other-langs">
     <section class="container-fluid" id="Français">
          <h2>Français</h2>
-         <div class="lang-container row justify-content-between align-items-center">
-           <div class="col-lg-6 col-12">
-             <div class="item  ">
-               <div class="row">
-                 <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+         <div class="lang-container row justify-content-between d-flex align-items-stretch">
+           <div class="col-lg-6 col-12 ">
+             <div class="item row m-3 ">
+                 <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
                  <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                    <h3>Le dernier Messager d'Allah</h3>
                    <p>Le dernier Messager d'Allah : Les preuves sur l’authenticité de l’Islam</p>
@@ -93,12 +102,12 @@
                      <a class="primary-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/fr/ih_books/single/fr-le-dernier-messager.pdf" target="_blank">Télécharger <i class="fas fa-download"></i></a>
                    </div>
                  </div>
-               </div>
+        
              </div>
            </div>
-           <div class="col-lg-6 col-12">
-             <div class="item  ">
-               <div class="row">
+           <div class="col-lg-6 col-12 ">
+             <div class="item row m-3">
+             
                  <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
                  <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                    <h3>Athées Les voleurs de l’au-delà</h3>
@@ -107,7 +116,7 @@
                          <a class="primary-btn" href="https://islamhouse.com/fr/books/2832540" target="_blank">Plus de détails <i class="fas fa-info-circle"></i></a>
                          <a class="primary-btn" href="https://d1.islamhouse.com/data/pdf-viewer/web/viewer.html?file=https://d1.islamhouse.com/data/fr/ih_books/single/fr-athees-les-voleurs-de-lau-dela.pdf" target="_blank">Télécharger <i class="fas fa-download"></i></a>
                    </div>
-                 </div>
+              
                </div>
             </div>
            </div>
@@ -119,7 +128,7 @@
         <div class="owl-carousel owl-theme lang-container row">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Agnostizismus</h3>
                 <p>Eine kurze Analyse des Konzepts des Agnostizismus.</p>
@@ -180,7 +189,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Dialogo tra un professore ateo e uno studente musulmano</h3>
                 <p>Dialogo tra un professore ateo e uno studente musulmano</p>
@@ -200,7 +209,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Աթեիստ պրոֆեսորի և մուսուլման Ուսանողի միջեւ երկխոսությունը</h3>
                 <span><a class="autor mb-2 d-inline-block" href="https://islamhouse.com/hy/author/8636/" target="_blank"><i class="far fa-user"></i> www.islamhouse.com</a></span>
@@ -219,7 +228,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Dialogu mes profesorit ateist dhe studentit musliman</h3>
                 <p>Ky libërth përmban një debat i cili është zhvilluar mes një studenti musliman dhe profesorit të tij ateist. Debati sillet rreth disa ideve ateiste të kota por, që janë të përhapura në shumë vende perëndimore. Prej këtyre ideve p.sh.: Krijimi i universit vetvetiu, pa krijues, pastaj mohimi i asaj se Allahu është krijues ngase, kjo dikton që ai të jetë krijues i gjithë të keqes në botë, dhe besëtytni dhe kotësira të tjera.</p>
@@ -238,7 +247,7 @@
         <div class="lang-container row">
           <div class="col-lg-6 col-12">
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Бедин билан суҳбат</h3>
                 <p>Мавзу (Ким маймун) номли китоб таржимаси бўлиб, китобча ислом эътиқодида инсоннинг келиб чиқиши борасидаги саҳиҳ тушунчани қувватлайди. Китоб кичик бўлишига қарамай, исломда инсоний ҳаётнинг пайдо бўлиши ҳақида билишни истаганлар учун кўпгина аҳамиятли ва зарур масалаларга ойдинлик киритади ва барча талаба ўғил-қизлар эътиборига ҳавола қилинади</p>
@@ -252,7 +261,7 @@
           </div>
           <div class="col-lg-6 col-12">
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Билмадим</h3>
                 <p>Бу мақолада аксар аҳли илмлар унутиб қўйган бир иборат ҳақида сўз юритилади. Биз ишора қилмоқчи бўлган сўз олим киши бирор нарса ҳақида сўралган пайтида тез-тез ишлатиб туриши керак бўлган "БИЛМАЙМАН" калимасидир.</p>
@@ -271,7 +280,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Діалог між викладачем - атеїстом та студентом – мусульманином</h3>
                 <p>Діалог між викладачем - атеїстом та студентом – мусульманином</p>
@@ -291,7 +300,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>دىنسىز كومىنىستلاردىن بىرى روزا تۇتۇش سالامەتلىككە زىيانلىق دەپ سەپسەتە قىلىدۇ</h3>
                 <p>مەن رۇسىيىدە ياشايمەن ۋە ئۇ يەردە ئوقۇيمەن، بىزنىڭ كۆپچىلىك ئوقۇتقۇچىلىرىمىز كوممۇنىست بولۇپ ئاللاھ تائالانىڭ مەۋجۇتلۇقىنى ئىنكار قىلىدۇ ۋە ئىشەنمەيدۇ. ئۇلاردىن بىرى بىزگە: نېمە ئۈچۈن ئاللاھ تائالا سىلەرنى رامىزاندا كۈندۈزدە يېمەك-ئىچمەكنى تەرك قىلىشقا بۇيرۇيدۇ، بۇنداق قىلىش سالامەتلىككە زىيانلىق تۇرسا؟، دەيدۇ. ئاللاھ خار قىلغان بۇ دىنسىزغا قانداق رەت قايتۇرۇش توغرىسىدا كۆرسەتمە بېرىشىڭلارنى سورايمىز؟</p>
@@ -311,7 +320,7 @@
         <div class="owl-carousel owl-theme lang-container row">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Diálogo entre un profesor ateo y un estudiante musulmán</h3>
                 <p>Este libro es una extracción del libro “¿Quien es el mono?” cuyo objetivo es confirmar la verdad de las creencias islámicas con respecto al origen del hombre.</p>
@@ -324,7 +333,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Ateísmo</h3>
                 <p>Puede que la persona niegue la existencia de Dios; pero, en lo profundo de su ser, sabe que es un hecho innegable.</p>
@@ -338,7 +347,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Mensaje para un Ateo</h3>
                 <p>La actitud de los seres humanos hacia Dios Todopoderoso y hacia Su grandeza en el manejo de los asuntos del universo varía de un individuo a otro. Todas las personas se benefician de Sus innumerables bendiciones, y todas se dan cuenta de que esta creación tiene un Creador, algunas creen en Él y aprecian la grandeza del Creador y le agradecen por Sus bendiciones, pero otras no creen en Él, lo niegan y no lo hacen. reconozca su gracia, gracia y generosidad. Cual de los dos eres tu</p>
@@ -357,7 +366,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Agnosticismo</h3>
                 <p>A questão do Agnosticismo é de fundamental importância a qualquer discussão teológica, porque o agnosticismo coexiste de forma complacente com o amplo espectro de religiões, ao invés de assumir uma posição teológica separada ou de oposição.</p>
@@ -377,7 +386,7 @@
         <div class="owl-carousel owl-theme lang-container row">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>বাংলাদেশে নাস্তিক্যবাদী অপতৎপরতা : প্রতিরোধের উপায়</h3>
                 <p>এ পুস্তিকায় নাস্তিক্যবাদ, বাংলাদেশে নাস্তিক্যবাদী তৎপরতার সংক্ষিপ্ত ইতিহাস, প্রকাশ্যে নাস্তিক্যবাদের প্রচার, বর্তমান প্রজন্মের নাস্তিক্যবাদীদের গুরু, নাস্তিক্যবাদীদের ভণ্ডামি, ইন্টারনেটে নাস্তিক্যবাদী প্রচারণার আধিপত্য, এদের মোকাবেলায় করণীয়, নাস্তিকদের প্রতিরোধের উপায় প্রভৃতি উপশিরোনামে বাংলাদেশে নাস্তিক্যবাদী তৎপরতার আদ্যান্ত তুলে ধরা হয়েছে। পাশাপাশি এসব তৎপরতা প্রতিরোধে করণীয় নির্দেশ করা হয়েছে আল্লাহর কয়েকটি বাণীর আলোকে।</p>
@@ -391,7 +400,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>ইসলাম ও জড়বাদ</h3>
                 <p>ইসলাম আত্মা ও শরীরের মাঝে ভারসাম্য কায়েম করে। সকল ক্ষেত্রে মধ্যমপন্থা ও ইনসাফ ধরে রাখে। ইসলাম জড়জগতের বাইরে কিছু অদৃশ্য বিষয়ের প্রতি ঈমান আনতে বলে এবং দুনিয়ার জীবনকে আখেরাতের শস্যক্ষেত্র বলে আখ্যায়িত করে। জড়বাদ হচ্ছে সম্পূর্ণ এর উল্টো একটি বিষয় যা জড়পদার্থ এবং যা কিছু জড়বাদী অভিজ্ঞতা-পরীক্ষা নিরীক্ষার আওতায় আসে তা ভিন্ন অন্য কিছুর প্রতি বিশ্বাস করে না। তাই জড়বাদী দর্শনকেন্দ্রিক গড়ে ওঠে যে-জীবন তা হল উদ্দেশ্যবিহীন জীবন। বক্ষ্যমাণ প্রবন্ধে এ বিষয়টিকেই পরিষ্কার করা হয়েছে।</p>
@@ -405,7 +414,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>জীবনের প্রতি বস্তুবাদী দৃষ্টিভঙ্গি পোষণ করা এবং এর ক্ষতিকর দিকসমূহ</h3>
                 <p>আল্লাহ তাআলা কেন মানুষকে সৃষ্টি করলেন? এ জন্য যে তারা পশুর মত খাওয়া-দাওয়া করবে? না তাদের জীবনের কোন লক্ষ-উদ্দেশ্য আছে? এ প্রবন্ধে বস্তুবাদী জীবন-দর্শনের অসারতা তুলে ধরা হয়েছে।</p>
@@ -425,7 +434,7 @@
         <div class="owl-carousel owl-theme lang-container row">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Rasprava između studenta muslimana i profesora ateiste</h3>
                 <p>Ova knjižica odražava dijalog u kojem vidimo stav mnogih profesora filozofije, ali i drugih nauka, širom svijeta, prema vjeri. Oni, puni sebe i zadivljeni svojim mišljenjem, pokušavaju pokazati svoju intelektualnu plitkost, koju smatraju dubinom i superiornošću, nad slabašnim učenicima i studentima. Nažalost, u mnogim slučajevima se ne javi neki student ko bi takvog profesora spustio na zemlju, kao u što je uradio student u ovom dijalogu.</p>
@@ -439,7 +448,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Rad muslimana kod ateiste</h3>
                 <p>Radim za čovjeka koji je ateista. Da li je dozvoljeno da radim za tu osobu. Dobroćudno se ophodi prema meni i dozvoljava mi da klanjam za vrijeme radnog vremena.</p>
@@ -453,7 +462,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Razgovor sa ateistom</h3>
                 <p>Kratki video o dokazima postojanja Allaha Uzvišenog kao odgovor svakom ateisti.</p>
@@ -473,7 +482,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>DIALOG POMIĘDZY PROFESOREM – ATEISTĄ A MUZUŁMAŃSKIM STUDENTEM</h3>
                 <p>Ova knjižica odražava dijalog u kojem vidimo stav mnogih profesora filozofije, ali i drugih nauka, širom svijeta, prema vjeri. Oni, puni sebe i zadivljeni svojim mišljenjem, pokušavaju pokazati svoju intelektualnu plitkost, koju smatraju dubinom i superiornošću, nad slabašnim učenicima i studentima. Nažalost, u mnogim slučajevima se ne javi neki student ko bi takvog profesora spustio na zemlju, kao u što je uradio student u ovom dijalogu.</p>
@@ -492,7 +501,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>ทฤษฎีวิวัฒนาการ ความเท็จที่ถูกเชื่อ</h3>
                 <p>หนังสือที่ให้ข้อมูลเกี่ยวกับข้อเท็จจริงของทฤษฎีวิวัฒนาการที่คิดค้นโดยชาร์ลส์ ดาร์วิน เป็นการวิพากษ์เชิงวิชาการที่อ้างอิงจากความเห็นของนักวิชาการในแขนงต่างๆ ที่ไม่เห็นด้วยกับทฤษฎีดังกล่าว รวมทั้งตอบโต้ข้อสรุปของทฤษฎีนี้ซึ่งปฏิเสธพระเจ้าอย่างเห็นได้ชัด ด้วยหลักฐานทางวิทยาศาสตร์จากแวดวงของนักวิชาการที่ไม่ใช่มุสลิมด้วยกันเอง</p>
@@ -512,7 +521,7 @@
         <div class="lang-container row">
           <div class="col-lg-6 col-12">
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Harry Poter ve Ölüm Ajandası büyük ve küçüklerin fitnesi ilhad ve küfürdür</h3>
                 <p>Bu vakitlerde “Harry Poter” adıyla bir durum yaygınlaştı. 7 ve 8 bölümden oluşan bir romandır. Bazı filme alınmıştır. Sihir hakkında bahsediyor ve şahsen de seyretmiş değilim. Ancak onun hakkında işittim ve çok yaygın olduğunu duydum...</p>
@@ -526,7 +535,7 @@
           </div>
           <div class="col-lg-6 col-12">
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Ateist bir öğretmen ve müslüman bir öğrenci arasındaki diyalog</h3>
                 <p>Ateist bir öğretmen ve müslüman bir öğrenci arasındaki diyalog: Bu kitapta müslüman bir öğrenci ile ateist bir öğretmen arasında diyalog geçmektedir...</p>
@@ -546,7 +555,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>నాస్తికత్వం: ఇస్లాం దృష్టిలో</h3>
                 <p>ఇస్లాం ధర్మం నాస్తికత్వం గురించి చాలా వివరంగా ప్రామాణిక ఆధారాలతో ఇక్కడ చర్చించబడింది. ఇంకా ఇందులో “మనం ఈ ప్రపంచంలో ఎందుకు కష్టనష్టాలకు గురవుతున్నాము, బాధలు పడుతున్నాము, ఈ ప్రపంచంలో అల్లాహ్ ఎందుకు ప్రజలను శిక్షిస్తాడు, స్వయంగా ఆయన మన ఎదురుగా ఎందుకు రాడు, ఆయన ఎందుకు మనల్ని పరీక్షిస్తున్నాడు” మొదలైన ప్రశ్నలకు జవాబు ఇవ్వవలసినదిగా నాస్తికులకు సవాలు చేయబడుతున్నది. మనం అల్లాహ్ ను ఎందుకు విశ్వసించాలో హేతుబద్దంగా సమాధానం ఇవ్వబడింది.</p>
@@ -566,7 +575,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Dialog între un profesor ateu și un student musulman</h3>
                 <p>Această carte dezvăluie modul logic și elegant în care pot fi demolate concepte ateise cu privire la existența Lui Allah (Dumnezeu)</p>
@@ -586,7 +595,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Dialog med profesorjem ateistom in študentom Muslimanom</h3>
                 <p>Dialog med profesorjem ateistom in študentom Muslimanom</p>
@@ -605,7 +614,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>පරිණාමවාදය පිළිබඳ විමසුමක්</h3>
                 <p>ස්වභාව ධර්මයේ ආශ්චර්යයන් ඉබේ සිදුවන්නක්ද? නැතිනම් අති මහත් විශ්ව සැලැස්මක් හෙවත් නියාමයක කොටසක් ලෙසින් එය ක්රිنයාත්මක වන්නේද යන්න අප විසින් සොයා බැලිය යුතු වැදගත් කරුණක්ව පවතී.</p>
@@ -625,7 +634,7 @@
         <div class="owl-carousel owl-theme lang-container row">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Расправа између професора атеисте и студента муслимана</h3>
                 <p>Књига „Ко је бре мајмун?“ потврђује тачност исламског веровања о пореклу човека (људског створења). Књижица је од велике важности, а потребна је свима који желе да схвате идеју људског живота у Исламу...</p>
@@ -638,7 +647,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Атеизам</h3>
                 <p>Иако особа може негирати постојање Узвишеног Створитеља, дубоко у свом срцу зна да Створитељ постоји. Докази су свуда око нас а и у нама самима. Последица атеизма је опасна и погубна, на овом и на будућем свету.</p>
@@ -652,7 +661,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Побијање темеља на којима се заснива теорија еволуције</h3>
                 <p>У овом чланку аутор говори о Дарвиновим теоријама, доказујући њихову неисправност, као и о разлозима који су довели да се његове теорије прихвате и рашире међу људима.</p>
@@ -666,7 +675,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Дијалог између атеисте и муслимана учењака</h3>
                 <p>Овај дијалог се остварио између учењака Муахаммеда Ел-Газалија и атеисте. Учењак је забележио овај дијалог у својој књизи „Кзаифу ел-хакк.“
@@ -681,7 +690,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Креација, еволуција, интелигентни дизајн или ипак Ислам?</h3>
                 <p>Које је исправно мишљење у вези порекла човечанства? Да ли је исправно мишљење иза којиг стоји креација, еволуција, интелигентни дизајн или ипак Ислам? Овај чланак пружа одговор на то питање.</p>
@@ -695,7 +704,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Расправа између професора атеисте и студента муслимана</h3>
                 <p>Ова књижица одражава дијалог у којем видимо став многих професора филозофије, али и других наука, широм света, према вери. Они, пуни себе и задивљени својим мишљењем, покушавају показати своју интелектуалну плиткост, коју сматрају дубином и супериорношћу...</p>
@@ -715,7 +724,7 @@
         <div class="owl-carousel owl-theme lang-container row">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>无神论比以物配主的行为更加大逆不道</h3>
                 <p>无神论与以物配主的行为：罪恶孰轻孰重？</p>
@@ -729,7 +738,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>一个无神论教授和一名穆斯林学生 之间的对话</h3>
                 <p>本文是《谁是猿猴》一书的片段节选，这本书旨在肯定穆斯林对
@@ -744,7 +753,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>一个无神论教授和一个穆斯林学生的对话</h3>
                 <p>有声书籍：一位学生和教授之间关于造物主存在与否的精彩对话</p>
@@ -764,7 +773,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>שיחה בין מורה אתאיסטי לבין תלמיד מוסלמי</h3>
                   <div class="links-container">
@@ -782,7 +791,7 @@
         <div class="lang-container row">
           <div class="col-lg-6 col-12">
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>رد شبهات ملحدین</h3>
                 <p>الحاد در اين زمان انكار وجود الله تعالي بطور كلي است كه در زمان فعلي بطور وسيع گسترش يافته است، طوريكه در دولتهاي اروپايي بصورت يك نظر قابل توجه در آمده است و در شكل حكومتهايي كه از آن حراست نمايند و دولتهايي كه از آن حمايت كنند ظهور كرده است، بلكه در سرزمينهاي اسلامي با اسلام سر جنگ را آغاز، سفهاء و كم‌خردان را به سمت خويش علاقمند و گمراهي‌ها را منتشر كرده اند، در این کتاب به شبهات مهم ملحدین پاسخ داده شده است و با دلایل قرآنی و عقلی این شبهات رد گردیده است</p>
@@ -795,7 +804,7 @@
           </div>
           <div class="col-lg-6 col-12">
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>متفکرین اسلامی در برابر منطق یونان</h3>
                 <p>در این کتاب مولف به نقد منطق یونان از دیدگاه اسلام می پردازند.</p>
@@ -815,7 +824,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>TALAKAYAN SA PAGITAN NG ATIESTANG PROPESOR ESTUDYANTING MUSLIM</h3>
                 <p>TALAKAYAN SA PAGITAN NG ATIESTANG PROPESOR ESTUDYANTING MUSLIM</p>
@@ -834,7 +843,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>گفتوگۆ له‌گه‌ڵ مولحيدێك</h3>
                 <p>بانگخوزاێك به‌ زمانی ئینگلیزی له‌م بابه‌ته‌ باسی گفتوگۆێك ده‌كات كه‌ له‌گه‌ڵ مولحدێك كردوه‌یه‌تی، به‌ ژێر نوسی كوردی له‌ لایه‌ن كۆمه‌ڵه‌ برایه‌كی دڵسۆزه‌وه‌ ئاماده‌ كراوه‌</p>
@@ -853,7 +862,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Дијалог помеѓу професорот атеист и студентот муслиман</h3>
                 <p>Дијалог помеѓу професорот атеист и студентот муслиман</p>
@@ -872,7 +881,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>DIALOG ANTARA PROFESOR ATEIS DAN PELAJAR MUSLIM</h3>
                   <div class="links-container">
@@ -890,7 +899,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>Párbeszéd egy ateista professzor és egy muszlim diák között</h3>
                 <p>Ez a könyv feltárja, hogy hogyan lehet elegánsan és logikusan az ateisták hitét lerombolni, és az emberek szemét felnyitni Istennel (Allah) kapcsolatban.</p>
@@ -909,7 +918,7 @@
         <div class="owl-carousel owl-theme lang-container row">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Bewijzen voor een atheïst dat Allah (God) bestaat</h3>
                 <p>Door de toename van het materialisme in onze tijd, lopen veel mensen met de vragen over al dan niet bestaan van Allah. In dit artikel probeert dr. Zakir Naik bewijzen voor te leggen over het bestaan van Allah.</p>
@@ -923,7 +932,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>De Atheïst</h3>
                 <p>Een atheïst is iemand die niet in God gelooft. Een atheïst gelooft niet in het bestaan van een Schepper. Dit is volgens de islam een grote zonde. In dit artikel probeert de auteur duidelijk te maken vannuit een Islamitische perspectief, hoe atheisme een zonde kan zijn.</p>
@@ -937,7 +946,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Aan de oever van het atheïsme</h3>
                 <p>In dit artikel toont de auteur dat het verstand, grenzen heeft, wanneer deze niet gerespecteert worden, is er groot kans dat de mens ten onder gaat.</p>
@@ -951,7 +960,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>kritiek op het pragmatisme</h3>
                 <p>De mensheid hebben nood aan een wezen dat Alwetend is, Almachtige, teneinde een complete, constante ethische moraal tot stand te krijgen. En wie anders dan God is daar geschikt voor.</p>
@@ -965,7 +974,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Kritiek op het individualisme</h3>
                 <p>In dit artikel vind je een uitgebreide kritiek terug op het individualisme.</p>
@@ -979,7 +988,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>De misvatting van de evolutie</h3>
                 <p>Eén van de belangrijkste onderwerpen waar Allah in de Koran naar verwijst, is de erkentelijkheid van de mens voor de talloze tekenen van de schepping op de aarde en de waardering van de mensen voor Zijn macht, door deze te gedenken. Tegenwoordig zijn er echter verschillende ideologieën die de mensen het Feit van de Schepping willen doen vergeten en zij trachten hen door ongegronde ideeën, te scheiden van hun religie.</p>
@@ -993,7 +1002,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Het weerleggen van listige vragen van atheïsten</h3>
                 <p>Een atheïst heeft behoefte aan iemand die hem uitnodigt naar Allah. Hij heeft behoefte aan iemand die hem herinnert aan de zegeningen, gunsten en tekenen die duiden op de Eenheid, Grootsheid en Aanwezigheid van Allah. Het heelal duidt op de aanwezigheid van Allah, hoe kan men dit ontkennen?</p>
@@ -1007,7 +1016,7 @@
           </div>
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 ">
                 <h3>Dialoog tss. een jonge moslim en een atheïst</h3>
                 <p>Het volgende is een vertaling van het boek "Wie is de aap?" om de waarheid van de islamitische overtuigingen over de oorsprong van de mens te bevestigen. Het is een essentieel en noodzakelijk handboek voor iedereen die het concept van de oorsprong van het menselijk leven in de islam wenst te begrijpen, ook voor studenten.</p>
@@ -1027,7 +1036,7 @@
         <div class="lang-container w-100">
           <div>
             <div class="item row m-3">
-              <div class="lang-img one col-lg-4 col-md-6 col-sm-16"></div>
+              <div class="lang-img one col-lg-4 col-md-6 col-sm-12"></div>
               <div class="lang-details col-lg-8 col-md-6 col-sm-12 p-3">
                 <h3>ΔΙΑΛΟΓΟΣ ΜΕΤΑΞΥ ΕΝΟΣ ΑΘΕΟΥ ΚΑΘΗΓΗΤΗ ΚΑΙ ΕΝΟΣ ΜΟΥΣΟΥΛΜΑΝΟΥ ΜΑΘΗΤΗ</h3>
                 <p>ΔΙΑΛΟΓΟΣ ΜΕΤΑΞΥ ΕΝΟΣ ΑΘΕΟΥ ΚΑΘΗΓΗΤΗ ΚΑΙ ΕΝΟΣ ΜΟΥΣΟΥΛΜΑΝΟΥ ΜΑΘΗΤΗ.</p>
@@ -1047,10 +1056,10 @@
 
 <footer>
   <div class="row p-4">
-    <div class="col-3">
+    <div class="col-3 footer-img-container">
       <img class="footer-img" src="dist/images/footer-logo.png" alt="">
     </div>
-    <div class="col-9">
+    <div class="col-9 ">
       <div class="row d-flex justify-content-start align-items-start">
         
         <div class="d-flex flex-column col-lg-4 col-md-6 col-sm-12">
