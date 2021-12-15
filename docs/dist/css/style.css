@@ -91,6 +91,11 @@
   height: 100%;
   background-color: white;
   z-index: 100;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
   transition: visibility 0.3s linear, opacity 0.3s linear;
   opacity: 1;
 }
@@ -289,7 +294,7 @@
 
 .other-langs .owl-theme .owl-nav [class*=owl-] {
   color: #3d8cfe;
-  font-size: 40px;
+  font-size: 50px;
 }
 .other-langs .owl-carousel .owl-prev {
   left: 25px;
@@ -364,7 +369,7 @@
   -o-transition: 0.2s ease-in;
 }
 .other-langs .lang-container .lang-img.one {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/11.jpg");
+  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/4.jpg");
   background-position: center;
 }
 .other-langs .lang-container .book-img.two {
@@ -387,6 +392,7 @@
 
 html {
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -536,6 +542,7 @@ nav option {
 #booksSec .owl-theme .owl-nav [class*=owl-] {
   color: #3d8cfe;
   font-size: 40px;
+  font-size: 50px;
 }
 #booksSec .owl-carousel .owl-prev {
   left: 25px;
@@ -557,7 +564,7 @@ nav option {
   padding: 3px;
 }
 #booksSec .books-container .item {
-  min-height: 335px;
+  height: 335px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: 4px;
@@ -580,7 +587,7 @@ nav option {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 #booksSec .books-container .item .book-details h3 {
@@ -588,6 +595,9 @@ nav option {
   font-weight: 700;
 }
 #booksSec .books-container .book-img, #booksSec .books-container .book-ar-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -610,25 +620,11 @@ nav option {
   -ms-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
 }
-#booksSec .books-container .book-ar-img {
-  position: relative;
-  height: auto;
-}
-#booksSec .books-container .book-ar-img img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#booksSec .books-container .book-img {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/1.jpg");
-  background-position: center;
-}
 
 #articlesSec .owl-theme .owl-nav [class*=owl-] {
   color: #FFF;
   font-size: 40px;
+  font-size: 50px;
 }
 #articlesSec .owl-carousel .owl-prev {
   left: 25px;
@@ -694,9 +690,13 @@ nav option {
   border-bottom-right-radius: 4px;
 }
 #articlesSec .articles-container .article-img {
-  height: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#articlesSec .articles-container .article-img img {
+  display: block;
+  width: 100%;
 }
 
 #audioSec .item {
@@ -819,6 +819,7 @@ nav option {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 #videoSec .videos-container .item::after {
   content: "";
@@ -833,13 +834,15 @@ nav option {
   border-bottom-right-radius: 4px;
 }
 #videoSec .videos-container .video-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-#videoSec .videos-container .video-img.one {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/10.png");
-  background-position: center;
+#videoSec .videos-container .video-img img {
+  display: block;
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 footer {
@@ -912,11 +915,6 @@ footer .footer-cta-btn {
     margin: 15px;
   }
 }
-@media screen and (max-width: 575px) {
-  #booksSec .book-ar-img, #booksSec .book-img {
-    height: 400px !important;
-  }
-}
 @media screen and (min-width: 600px) {
   footer .footer-img {
     width: 50%;
@@ -927,155 +925,20 @@ footer .footer-cta-btn {
     margin-top: 50px;
   }
 
-  #booksSec .book-ar-img, #booksSec .book-img {
-    height: 260px;
-  }
-  #booksSec .item {
-    min-height: auto;
-  }
-
-  .book-img, .video-img, .article-img, .article-arimg {
-    height: 260px !important;
-    width: 100% !important;
-  }
-
-  #articlesSec .article-arimg {
-    background-position: inherit !important;
-  }
-
-  .articles-container .item-ar::after, #articlesSec .articles-container .item::after, #videoSec .item-ar::after, #videoSec .videos-container .item::after {
-    background-color: transparent;
-  }
-
   footer {
     padding: 0px;
   }
 }
-@media screen and (min-width: 768px) {
-  #videoSec .videos-container .book-img {
-    height: auto;
+@media screen and (max-width: 992px) {
+  #articlesSec .articles-container {
+    justify-content: center;
   }
 }
-@media screen and (min-width: 850px) {
-  #booksSec .item {
-    height: 250px;
+@media screen and (max-width: 1200px) {
+  #booksSec .books-container .item {
+    height: auto !important;
   }
 }
-#booksSec .book-img.one-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/books/eng/2.jpg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#booksSec .book-img.two-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/books/eng/2.jpg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#booksSec .book-img.three-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/books/eng/3.jpg") !important;
-  background-position: top;
-  background-size: cover;
-}
-#booksSec .book-img.four-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/books/eng/5.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#booksSec .book-img.five-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/books/eng/4.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#booksSec .book-img.six-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/books/eng/1.jpg") !important;
-  background-position: center;
-  background-size: cover;
-}
-
-#articlesSec .article-img.one {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/eng/1.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-#articlesSec .article-img.two {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/eng/2.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-#articlesSec .article-img.three {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/eng/3.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-
-#articlesSec .article-arimg.one {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/ar/1.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#articlesSec .article-arimg.two {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/ar/2.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#articlesSec .article-arimg.three {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/ar/3.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#articlesSec .article-arimg.four {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/articles/ar/4.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-
-#videoSec .video-img.one-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/eng/3.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-#videoSec .video-img.two-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/eng/3.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-#videoSec .video-img.three-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/eng/1.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-#videoSec .video-img.four-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/eng/5.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-#videoSec .video-img.five-eng {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/eng/2.jpeg") !important;
-  background-position: top;
-  background-size: cover;
-}
-
-#videoSec .video-img.one-ar {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/ar/3.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#videoSec .video-img.two-ar {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/ar/3.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#videoSec .video-img.three-ar {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/ar/1.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-#videoSec .video-img.four-ar {
-  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/videos/ar/2.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-}
-
 .other-langs .bg {
   background-size: cover;
   background-position: center;

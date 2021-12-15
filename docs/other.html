@@ -21,11 +21,11 @@
 
 <body>
     <!-- Loader Element -->
-    <!-- <div class="loader">
+    <div class="loader">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='#3d8cfe'><circle cx="12" cy="12" r="4"></circle></g></svg>
-  </div> -->
+  </div>
   <!-- Scroll To Top Bnt -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
   <div class="languages-container ">
@@ -1113,15 +1113,19 @@
       loop: true,
       margin: 10,
       dots:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
       nav: true,
       navText: ["<div class='nav-button owl-prev'><i class=\"fas fa-chevron-left\"></i></div>", "<div class='nav-button owl-next'><i class=\"fas fa-chevron-right\"></i></div>"],
       responsive: {
         0: {
           items: 1,
-          nav: false
+          nav: true,
         },
         900: {
           items: 1,
+          nav: true,
         },
         1000: {
           items: 1,

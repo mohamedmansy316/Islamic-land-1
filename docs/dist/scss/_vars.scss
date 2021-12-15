@@ -92,11 +92,11 @@ $sec-color: #3d8cfe;
   height: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 100;
-  // transition: 0.2s ease-in;
-  // -webkit-transition: 0.2s ease-in;
-  // -moz-transition: 0.2s ease-in;
-  // -ms-transition: 0.2s ease-in;
-  // -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
   transition:visibility 0.3s linear,opacity 0.3s linear;
   opacity:1;
   svg{
